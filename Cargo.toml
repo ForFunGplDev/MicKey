@@ -1,0 +1,36 @@
+[package]
+name = "mickey_native"
+version = "2026.6.1"
+edition = "2021"
+
+[[bin]]
+name = "MicKey"
+path = "src/main.rs"
+
+[dependencies]
+windows-core = "0.58"
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Shell",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Controls",
+    "Win32_UI_Controls_Dialogs",
+    "Win32_System_LibraryLoader",
+    "Win32_Media_Audio",
+    "Win32_Media_Audio_Endpoints",
+    "implement",
+    "Win32_System_Com",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_Input_KeyboardAndMouse",
+] }
+
+[build-dependencies]
+embed-resource = "2"
+
+[profile.release]
+opt-level = "s"
+panic = 'abort'
+lto = true
+codegen-units = 1
+strip = true
