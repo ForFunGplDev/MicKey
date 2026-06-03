@@ -56,6 +56,8 @@ The indicator stays on top of all other windows and does not interfere with clic
 
 Open Settings by right-clicking the tray icon and choosing **Settings**. Changes preview live on screen. Nothing is permanent until you click **Save Changes**.
 
+<img width="506" height="485" alt="image" src="https://github.com/user-attachments/assets/1e12b8e1-1dda-4881-a9d8-7b4a1c434abc" />
+
 ### Input Device
 Selects which microphone MicKey controls. **Default** uses whatever Windows has set as your default communication device (recommended for most people). If you have multiple microphones, pick the specific one you want from the list.
 
