@@ -159,7 +159,7 @@ opacity_error=100
 Requires [Rust](https://rustup.rs/) (stable toolchain) and a Windows build environment.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MicKey.git
+git clone https://github.com/ForFunGplDev/MicKey.git
 cd MicKey
 cargo build --release
 ```
